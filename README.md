@@ -1,8 +1,18 @@
+
 <p align="center">
 <img src="Image Assets\AgoraLogo-Transparent.png" height="200">
 </p>
 
 # Agora VR
+<a href="https://github.com/Agora-VR/Agora-VR/releases" alt="Releases">
+    <img src="https://img.shields.io/github/v/release/Agora-VR/Agora-VR?include_prereleases" /></a>
+
+<a href="https://github.com/Agora-VR/Agora-VR/graphs/traffic" alt="Downloads">
+    <img src="https://img.shields.io/github/downloads/Agora-VR/Agora-VR/total" /></a>
+
+<a href="https://github.com/Agora-VR/Agora-VR/pulse" alt="Repo Size">
+    <img src="https://img.shields.io/github/repo-size/Agora-VR/Agora-VR" /></a>
+
 Our project focuses on the treatment of social anxiety and social phobias by utilizing VR technology for psychological and cognitive therapy. The goal is to allow patients who suffer from Agoraphobia or related disorders such as Schizoid personality disorder (SPD) to be able to overcome their anxiety in a controlled manner within the comfort of their own environment. By gradually exposing the patient to different immersive and interactive environments, it is possible to reduce their anxiety over time.
 
 ## What is this project about?
@@ -31,10 +41,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 # Group S20-61 Members
-|||||||
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png" height="80"></a> | <a href="https://github.com/DanNguyen-CE"><img src="Image Assets\profile_dan.png" height="80"></a> | <a href="https://github.com/tmose1106"><img src="Image Assets\profile_ted.png" height="80"></a> | <a href="https://github.com/MichaelTruongZ"><img src="Image Assets\profile_mike.png" height="80"></a> | | <a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/"><img src="Image Assets\profile_burdea.png" height="80"></a>|
-| [Aryeh Ness](https://github.com/AryehNess) | [Daniel Nguyen](https://github.com/DanNguyen-CE) | [Ted Moseley](https://github.com/tmose1106) | [Michael Truong](https://github.com/MichaelTruongZ) | | [Dr. Grigore Burdea](https://www.linkedin.com/in/grigore-burdea-phd-9a028340/) |
+<table style="width:100%" border="0">
+  <tr>
+    <th width="20%">
+        <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png" height="80"></a>
+    </th>
+    <th width="20%">
+        <a href="https://github.com/DanNguyen-CE" width="20%"><img src="Image Assets\profile_dan.png" height="80"></a>
+    </th>
+    <th width="20%">
+        <a href="https://github.com/tmose1106" width="20%"><img src="Image Assets\profile_ted.png" height="80"></a>
+    </th>
+    <th width="20%">
+        <a href="https://github.com/MichaelTruongZ" width="20%"><img src="Image Assets\profile_mike.png" height="80"></a>
+    </th>
+    <th width="20%">
+        <a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/" width="20%"><img src="Image Assets\profile_burdea.png" height="80"></a>
+    </th>
+  </tr>
+  <tr>
+    <th><a href="https://github.com/AryehNess">Aryeh Ness</a></th>
+    <th><a href="https://github.com/DanNguyen-CE">Daniel Nguyen</a></th>
+    <th><a href="https://github.com/tmose1106">Ted Moseley</a></th>
+    <th><a href="https://github.com/MichaelTruongZ">Michael Truong</a></th>
+    <th><a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/">Dr. Grigore Burdea</a></th>
+  </tr>
+</table>
 
 ```
 Rutgers University - New Brunswick

@@ -1,5 +1,5 @@
 <p align="center">
-<img src="AgoraLogo-Transparent.png" height="200">
+<img src="Image Assets\AgoraLogo-Transparent.png" height="200">
 </p>
 
 # Agora VR
@@ -12,7 +12,7 @@ People who have these disorders find it difficult or impossible to go out for he
 
 Our idea revolves around using the Oculus Quest, a standalone VR HMD that does not need to be connected to a computer and is not bounded by wires. This means that the patient can have access to a relatively inexpensive treatment option that they can use within the comfort of their own space. The usage of VR also allows the patient to be immersed within the environments that can dynamically change depending on the stage of treatment or severity of the disorder. 
 
-Using psychotherapy (a type of therapy that helps change a person’s behavioral and thinking patterns), exposure therapy ( a type of therapy that exposes the person to the things that they are afraid of or avoid in a controlled way), and metacognitive interpersonal therapy (MIT), we can reduce the effects of agoraphobia and other social anxiety disorders of patients who use our system.
+Using psychotherapy (a type of therapy that helps change a person’s behavioral and thinking patterns), exposure therapy (a type of therapy that exposes the person to the things that they are afraid of or avoid in a controlled way), and metacognitive interpersonal therapy (MIT), we can reduce the effects of agoraphobia and other social anxiety disorders of patients who use our system.
 
 ## Features
 ### Lorem Ipsum
@@ -27,14 +27,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 ### Lorem Ipsum
-The application provides the user with a gallery function that allows the user to select one of their plants by name and display all of their images of that plant. The user can also use the gallery to link photos on their phone to their plants for easy access later.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 # Group S20-61 Members
-
-- [Ness, Aryeh](https://github.com/AryehNess)
-- [Nguyen, Daniel](https://github.com/DanNguyen-CE)
-- [Moseley, Ted](https://github.com/tmose1106)
-- [Truong, Michael](https://github.com/MichaelTruongZ)
+|||||||
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png" height="80"></a> | <a href="https://github.com/DanNguyen-CE"><img src="Image Assets\profile_dan.png" height="80"></a> | <a href="https://github.com/tmose1106"><img src="Image Assets\profile_ted.png" height="80"></a> | <a href="https://github.com/MichaelTruongZ"><img src="Image Assets\profile_mike.png" height="80"></a> | | <a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/"><img src="Image Assets\profile_burdea.png" height="80"></a>|
+| [Aryeh Ness](https://github.com/AryehNess) | [Daniel Nguyen](https://github.com/DanNguyen-CE) | [Ted Moseley](https://github.com/tmose1106) | [Michael Truong](https://github.com/MichaelTruongZ) | | [Dr. Grigore Burdea](https://www.linkedin.com/in/grigore-burdea-phd-9a028340/) |
 
 ```
 Rutgers University - New Brunswick

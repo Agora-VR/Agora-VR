@@ -1,9 +1,10 @@
 
 <p align="center">
-<img src="Image Assets\AgoraLogo-Transparent.png" height="200">
+<a href="https://github.com/Agora-VR"><img src="Image Assets\AgoraLogo-Transparent.png" height="200px"></a>
 </p>
 
-# Agora VR
+#
+<center>
 <a href="https://github.com/Agora-VR/Agora-VR/releases" alt="Releases">
     <img src="https://img.shields.io/github/v/release/Agora-VR/Agora-VR?include_prereleases" /></a>
 
@@ -13,6 +14,11 @@
 <a href="https://github.com/Agora-VR/Agora-VR/pulse" alt="Repo Size">
     <img src="https://img.shields.io/github/repo-size/Agora-VR/Agora-VR" /></a>
 
+<a href="https://developer.oculus.com/quest/?locale=en_US" alt="Repo Size">
+    <img src="https://img.shields.io/badge/platform-Oculus%20Quest-9517A9" /></a>
+</center>
+
+# Agora VR
 Our project focuses on the treatment of social anxiety and social phobias by utilizing VR technology for psychological and cognitive therapy. The goal is to allow patients who suffer from Agoraphobia or related disorders such as Schizoid personality disorder (SPD) to be able to overcome their anxiety in a controlled manner within the comfort of their own environment. By gradually exposing the patient to different immersive and interactive environments, it is possible to reduce their anxiety over time.
 
 ## What is this project about?
@@ -31,32 +37,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ### Lorem Ipsum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
 ### Lorem Ipsum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
 ### Lorem Ipsum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 
 # Group S20-61 Members
-<table style="width:100%" border="0">
+<table>
   <tr>
     <th width="20%">
-        <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png" height="80"></a>
+        <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png"></a>
     </th>
     <th width="20%">
-        <a href="https://github.com/DanNguyen-CE" width="20%"><img src="Image Assets\profile_dan.png" height="80"></a>
+        <a href="https://github.com/DanNguyen-CE"><img src="Image Assets\profile_dan.png"></a>
     </th>
     <th width="20%">
-        <a href="https://github.com/tmose1106" width="20%"><img src="Image Assets\profile_ted.png" height="80"></a>
+        <a href="https://github.com/tmose1106"><img src="Image Assets\profile_ted.png"></a>
     </th>
     <th width="20%">
-        <a href="https://github.com/MichaelTruongZ" width="20%"><img src="Image Assets\profile_mike.png" height="80"></a>
+        <a href="https://github.com/MichaelTruongZ"><img src="Image Assets\profile_mike.png"></a>
     </th>
     <th width="20%">
-        <a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/" width="20%"><img src="Image Assets\profile_burdea.png" height="80"></a>
+        <a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/"><img src="Image Assets\profile_burdea.png"></a>
     </th>
   </tr>
   <tr>

@@ -4,7 +4,7 @@
 </p>
 
 #
-<center>
+<p align="center">
 <a href="https://github.com/Agora-VR/Agora-VR/releases" alt="Releases">
     <img src="https://img.shields.io/github/v/release/Agora-VR/Agora-VR?include_prereleases" /></a>
 
@@ -14,9 +14,12 @@
 <a href="https://github.com/Agora-VR/Agora-VR/pulse" alt="Repo Size">
     <img src="https://img.shields.io/github/repo-size/Agora-VR/Agora-VR" /></a>
 
-<a href="https://developer.oculus.com/quest/?locale=en_US" alt="Repo Size">
-    <img src="https://img.shields.io/badge/platform-Oculus%20Quest-9517A9" /></a>
-</center>
+<a href="https://developer.oculus.com/quest/" alt="Repo Size">
+    <img src="https://img.shields.io/static/v1?logo=oculus&label=platform&message=Oculus%20Quest&color=9517A9" /></a>
+
+<a href="https://developer.oculus.com/distribute/accessories-guidelines-touch/?device=QUEST" alt="Repo Size">
+    <img src="https://img.shields.io/static/v1?logo=oculus&label=controllers&message=Oculus%20Touch&color=9517A9" /></a>
+</p>
 
 # Agora VR
 Our project focuses on the treatment of social anxiety and social phobias by utilizing VR technology for psychological and cognitive therapy. The goal is to allow patients who suffer from Agoraphobia or related disorders such as Schizoid personality disorder (SPD) to be able to overcome their anxiety in a controlled manner within the comfort of their own environment. By gradually exposing the patient to different immersive and interactive environments, it is possible to reduce their anxiety over time.

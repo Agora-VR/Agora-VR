@@ -13,34 +13,34 @@ MonoBehaviour:
   m_Name: Readme
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: 7801804018a7dcf42abb827444e18660, type: 3}
-  title: Universal Project Template
+  title: Agora VR
   sections:
-  - heading: The Universal Project Template
-    text: 'The Universal Project Template configures Project settings for Projects where performance, wide platform support, and ease of customizing graphics are the primary considerations.'
+  - heading: VR Therapy of Agoraphobia and Social Anxiety Disorders
+    text: ''
     linkText: 
     url: 
   - heading: 
-    text: 'This template uses the Universal Render Pipeline (URP) and Shader Graph.'
+    text: 'Our project focuses on the treatment of social anxiety and social phobias by utilizing VR technology for psychological and cognitive therapy. The goal is to allow patients who suffer from Agoraphobia or related disorders such as Schizoid personality disorder (SPD) to be able to overcome their anxiety in a controlled manner within the comfort of their own environment. By gradually exposing the patient to different immersive and interactive environments, it is possible to reduce their anxiety over time.'
+    linkText: 
+    url: 
+  - heading: About Us
+    text: ''
     linkText: 
     url: 
   - heading:
-    text: 'URP is prebuilt Scriptable Render Pipeline that is quick and easy to customize, and lets you create optimized graphics across a wide range of platforms. URP also includes an optimized 2D renderer complete with 2D lights and pixel perfect rendering, and an integrated post-processing solution.'
+    text: 'Members: Aryeh Ness, Daniel Nguyen, Ted Moseley, & Michael Truong'
     linkText: 
     url: 
   - heading:
-    text: 'Shader Graph is a tool that allows you to create shaders using a visual node editor instead of writing code.'
+    text: 'Rutgers University - New Brunswick, Electical and Computer Engineering Department'
     linkText: 
     url: 
   - heading: 
-    text: 'This template contains a sample Scene that contains examples of how to configure lighting settings, Materials, Shaders, and post-processing effects in URP, several preconfigured Universal Render Pipeline Assets that let you quickly swap between graphics quality levels, and Presets that have been optimized for use with URP.'
-    linkText:
-    url:
+    text: 'Capstone Design - Dr. Hana Godrich'
+    linkText: 
+    url: 
   - heading: 
-    text: 'To read more about URP and its built-in features, see the '
-    linkText: URP documentation.
-    url: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html
-  - heading: 
-    text: 'For more information about Shader Graph, see the '
-    linkText: Shader Graph documentation
-    url: https://docs.unity3d.com/Packages/com.unity.shadergraph@latest
+    text: 'Advisor: Dr. Grigore Burdea'
+    linkText: 
+    url: 
   loadedLayout: 1

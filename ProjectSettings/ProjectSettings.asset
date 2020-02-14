@@ -165,7 +165,7 @@ PlayerSettings:
     Android: com.RutgersECE.Capstone2020.AgoraVR
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 19
+  AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
   aotOptions: 

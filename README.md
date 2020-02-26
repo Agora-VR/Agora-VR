@@ -14,11 +14,11 @@
 <a href="https://github.com/Agora-VR/Agora-VR/pulse" alt="Repo Size">
     <img src="https://img.shields.io/github/repo-size/Agora-VR/Agora-VR" /></a>
 
-<a href="https://developer.oculus.com/quest/" alt="Repo Size">
+<a href="https://developer.oculus.com/quest/" alt="Platform">
     <img src="https://img.shields.io/static/v1?logo=oculus&label=platform&message=Oculus%20Quest&color=9517A9" /></a>
 
-<a href="https://developer.oculus.com/distribute/accessories-guidelines-touch/?device=QUEST" alt="Repo Size">
-    <img src="https://img.shields.io/static/v1?logo=oculus&label=controllers&message=Oculus%20Touch&color=9517A9" /></a>
+<a href="https://unity3d.com/unity/whats-new/2019.3.1" alt="Unity Version">
+    <img src="https://img.shields.io/static/v1?logo=unity&label=unity%20version&message=2019.3.1&color=202020" /></a>
 </p>
 
 # Agora VR
@@ -75,28 +75,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </table>
 
 ### Contributions (WIP. Subject To Change.)
-#####[Aryeh Ness](https://github.com/AryehNess)
+>*All members primarily contributed based on their strengths but also assisted other team members in other areas when needed.*
+
+[Aryeh Ness](https://github.com/AryehNess)
  - Therapy Research Lead
  - Research Protocol Lead
  - 3D Models
  - Unity Development
 
-#####[Daniel Nguyen](https://github.com/AryehNess)
+[Daniel Nguyen](https://www.linkedin.com/in/dannguyen-ce/)
  - Art, Design, & Presentation Lead
  - Unity & Oculus Development Lead
  - 3D Models Lead
  - Hardware Integration
 
-#####[Ted Moseley](https://github.com/AryehNess)
+[Ted Moseley](https://www.linkedin.com/in/ted-moseley-6646b1192/)
  - Backend & Database Lead
  - Website & Access Portal Lead
  - Hardware Setup & Communications
  - Data Tracking & Collection
 
-#####[Michael Truong](https://github.com/AryehNess)
+[Michael Truong](https://github.com/MichaelTruongZ)
  - Data Tracking & Collection Lead
  - Speech-To-Text Integration
  - Unity Development
+
+### Attributions
+Special thanks to:
+ - Lorem Ipsum
+ - Lorem Ipsum
+
 
 ```
 Rutgers University - New Brunswick

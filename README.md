@@ -29,21 +29,21 @@ Agoraphobia is defined as “a type of anxiety disorder in which you fear and av
 
 People who have these disorders find it difficult or impossible to go out for help and receive treatment. In other cases, after the first few treatments, they can start to distrust the therapist or have fears of rejection. This is where our idea begins to take shape.
 
-Our idea revolves around using the Oculus Quest, a standalone VR HMD that does not need to be connected to a computer and is not bounded by wires. This means that the patient can have access to a relatively inexpensive treatment option that they can use within the comfort of their own space. The usage of VR also allows the patient to be immersed within the environments that can dynamically change depending on the stage of treatment or severity of the disorder. 
+Our idea revolves around using the Oculus Quest, a standalone VR HMD that does not need to be connected to a computer and is not bounded by wires. This means that the patient can have access to a relatively inexpensive treatment option that they can use within the comfort of their own space. The usage of VR also allows the patient to be immersed within the environments that can dynamically change depending on the stage of treatment or severity of the disorder.
 
 Using psychotherapy (a type of therapy that helps change a person’s behavioral and thinking patterns), exposure therapy (a type of therapy that exposes the person to the things that they are afraid of or avoid in a controlled way), and metacognitive interpersonal therapy (MIT), we can reduce the effects of agoraphobia and other social anxiety disorders of patients who use our system.
 
 ## Features
-### Lorem Ipsum
+### Dynamic Sessions
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Lorem Ipsum
+### Auditorium Public Speaking Scenario
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Lorem Ipsum
+### Heart-rate & Stress Level Tracking
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Lorem Ipsum
+### Patient/Clinician/Cartaker Web Portal
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # Group S20-61 Members
@@ -53,10 +53,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png"></a>
     </th>
     <th width="20%">
-        <a href="https://github.com/DanNguyen-CE"><img src="Image Assets\profile_dan.png"></a>
+        <a href="https://www.linkedin.com/in/dannguyen-ce/"><img src="Image Assets\profile_dan.png"></a>
     </th>
     <th width="20%">
-        <a href="https://github.com/tmose1106"><img src="Image Assets\profile_ted.png"></a>
+        <a href="https://www.linkedin.com/in/ted-moseley-6646b1192/"><img src="Image Assets\profile_ted.png"></a>
     </th>
     <th width="20%">
         <a href="https://github.com/MichaelTruongZ"><img src="Image Assets\profile_mike.png"></a>
@@ -67,12 +67,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </tr>
   <tr>
     <th><a href="https://github.com/AryehNess">Aryeh Ness</a></th>
-    <th><a href="https://github.com/DanNguyen-CE">Daniel Nguyen</a></th>
-    <th><a href="https://github.com/tmose1106">Ted Moseley</a></th>
+    <th><a href="https://www.linkedin.com/in/dannguyen-ce/">Daniel Nguyen</a></th>
+    <th><a href="https://www.linkedin.com/in/ted-moseley-6646b1192/">Ted Moseley</a></th>
     <th><a href="https://github.com/MichaelTruongZ">Michael Truong</a></th>
     <th><a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/">Dr. Grigore Burdea</a></th>
   </tr>
 </table>
+
+### Contributions (WIP. Subject To Change.)
+#####[Aryeh Ness](https://github.com/AryehNess)
+ - Therapy Research Lead
+ - Research Protocol Lead
+ - 3D Models
+ - Unity Development
+
+#####[Daniel Nguyen](https://github.com/AryehNess)
+ - Art, Design, & Presentation Lead
+ - Unity & Oculus Development Lead
+ - 3D Models Lead
+ - Hardware Integration
+
+#####[Ted Moseley](https://github.com/AryehNess)
+ - Backend & Database Lead
+ - Website & Access Portal Lead
+ - Hardware Setup & Communications
+ - Data Tracking & Collection
+
+#####[Michael Truong](https://github.com/AryehNess)
+ - Data Tracking & Collection Lead
+ - Speech-To-Text Integration
+ - Unity Development
 
 ```
 Rutgers University - New Brunswick

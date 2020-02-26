@@ -662,7 +662,7 @@ GameObject:
   - component: {fileID: 7074696734496866382}
   m_Layer: 0
   m_Name: RightEndSeat
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

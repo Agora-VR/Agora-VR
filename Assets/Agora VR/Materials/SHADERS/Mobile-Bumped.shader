@@ -9,7 +9,7 @@ Shader "Agora VR/Bumped Diffuse" {
 Properties {
     _Color("Color", Color) = (1,1,1,1)
     _MainTex ("Base (RGB)", 2D) = "white" {}
-    [NoScaleOffset] _BumpMap ("Normalmap", 2D) = "bump" {}
+    // [NoScaleOffset] _BumpMap ("Normalmap", 2D) = "bump" {}
 }
 
 SubShader {
@@ -20,7 +20,7 @@ CGPROGRAM
 #pragma surface surf Lambert noforwardadd
 
 sampler2D _MainTex;
-sampler2D _BumpMap;
+// sampler2D _BumpMap;
 fixed4 _Color;
 
 struct Input {
@@ -31,7 +31,7 @@ void surf (Input IN, inout SurfaceOutput o) {
     fixed4 c = tex2D(_MainTex, IN.uv_MainTex);
     o.Albedo = _Color.rgb * c.rgb;
     o.Alpha = _Color.a;
-    o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_MainTex));
+    // o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_MainTex));
 }
 ENDCG
 }

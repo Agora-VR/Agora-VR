@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("Agora VR/3rd Party/Oculus Hand Helper")]
+
 /// <summary>
 /// Simple helper script that conditionally enables rendering of a controller if it is connected.
 /// </summary>

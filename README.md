@@ -108,7 +108,7 @@ Special thanks to:
 
 ```
 Rutgers University - New Brunswick
-Electical and Computer Engineering Department
+Electrical and Computer Engineering Department
 Capstone Design - Dr. Hana Godrich
 Advisor: Dr. Grigore Burdea
 Spring 2020

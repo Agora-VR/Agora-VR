@@ -27,7 +27,7 @@ GameObject:
   m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 119
   m_IsActive: 1
 --- !u!4 &4890940974281382580
 Transform:
@@ -125,6 +125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LeftEndSeat
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 451391906c47d1941ae520b538e95226,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451391906c47d1941ae520b538e95226, type: 3}

@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class HandMovement : MonoBehaviour
 {
-    Vector3 lastPosition;
-    float distanceTravelled;
-    float seconds;
-    public Transform body;
-    // Start is called before the first frame update
+    private Vector3 lastPosition;
+    private float distanceTravelled;
+    private float seconds;
+
+    [SerializeField]
+    private Transform body;
+    [SerializeField]
+    private TextMeshPro tmp;
+
     void Start()
     {
         lastPosition = transform.position;
@@ -16,17 +21,18 @@ public class HandMovement : MonoBehaviour
         seconds = 0.0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float oldDistance = distanceTravelled;
         distanceTravelled += Vector3.Distance(transform.position, lastPosition);
         lastPosition = transform.position;
 
-        if (distanceTravelled - oldDistance > 0.02f)
+        if (distanceTravelled - oldDistance > 0.01f)
         {
             seconds += Time.deltaTime;
             Debug.Log(seconds);
         }
+
+        tmp.text = "distanceTraveled= " + Mathf.FloorToInt(distanceTravelled) + "\nseconds= " + Mathf.FloorToInt(seconds);
     }
 }

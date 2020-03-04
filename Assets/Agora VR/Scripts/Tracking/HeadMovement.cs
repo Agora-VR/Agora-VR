@@ -6,9 +6,9 @@ using TMPro;
 public class HeadMovement : MonoBehaviour
 {
     [SerializeField]
-    private Transform audience;
     private float timer;
-    private float totaltime;
+    private float totalTime;
+    private float sphereRadius = 2.0f;
 
     [SerializeField]
     private TextMeshPro tmp;
@@ -16,26 +16,18 @@ public class HeadMovement : MonoBehaviour
     void Start()
     {
         timer = 0.0f;
-        totaltime = 0.0f;
+        totalTime = 0.0f;
     }
 
     void Update()
     {
-        for (int i = 0; i < audience.transform.childCount; i++)
-        {
-            GameObject thisObject = audience.transform.GetChild(i).gameObject;
-            Vector3 dir = (thisObject.transform.position - transform.position).normalized;
-            float dot = Vector3.Dot(dir, transform.forward);
-            totaltime += Time.deltaTime;
-            if (dot > 0.8f)
-            {
-                timer += Time.deltaTime;
-                Debug.Log(timer);
-                Debug.Log(totaltime);
 
-                tmp.text = "timer= " + Mathf.FloorToInt(timer) + "\ntotalTime= " + Mathf.FloorToInt(totaltime);
-                break;
-            }
-        }
+        RaycastHit hit;
+
+        if(Physics.SphereCast(transform.position, sphereRadius, transform.forward, out hit, 1000))
+            if(hit.collider.tag == "Seat")
+                timer += Time.deltaTime;
+
+        tmp.text = "timer= " + Mathf.FloorToInt(timer) + "\ntotalTime= " + Mathf.FloorToInt(totalTime);
     }
 }

@@ -8,9 +8,10 @@ public class HandMovement : MonoBehaviour
     private Vector3 lastPosition;
     private float distanceTravelled;
     private float seconds;
+    private OVRHand track;
 
     [SerializeField]
-    private Transform body;
+    private GameObject hands;
     [SerializeField]
     private TextMeshPro tmp;
 
@@ -19,15 +20,19 @@ public class HandMovement : MonoBehaviour
         lastPosition = transform.position;
         distanceTravelled = 0.0f;
         seconds = 0.0f;
+        track = hands.GetComponent<OVRHand>();
     }
 
     void Update()
     {
         float oldDistance = distanceTravelled;
-        distanceTravelled += Vector3.Distance(transform.position, lastPosition);
+        if (track.IsTracked)
+            distanceTravelled += Vector3.Distance(transform.position, lastPosition);
         lastPosition = transform.position;
 
-        if (distanceTravelled - oldDistance > 0.01f)
+
+
+        if (distanceTravelled - oldDistance > 0.01f && track.IsTracked)
         {
             seconds += Time.deltaTime;
             Debug.Log(seconds);

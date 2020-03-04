@@ -1425,7 +1425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e31f1400fa5c39a439190ed1e036c5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audience: {fileID: 5845727712169812182}
+  timer: 0
   tmp: {fileID: 1128889532}
 --- !u!114 &561122236
 MonoBehaviour:
@@ -8917,9 +8917,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d278a0937ec28f4ea3312edd1c67eac, type: 3}
---- !u!4 &1652389277 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 25015806534403793, guid: 0d278a0937ec28f4ea3312edd1c67eac,
+--- !u!1 &1652389277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 26592949929541649, guid: 0d278a0937ec28f4ea3312edd1c67eac,
     type: 3}
   m_PrefabInstance: {fileID: 1652389276}
   m_PrefabAsset: {fileID: 0}
@@ -8947,7 +8947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5e056f78c210147aa1b73fc1db8eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 1652389277}
+  hands: {fileID: 1652389277}
   tmp: {fileID: 1007801889}
 --- !u!114 &1652389281
 MonoBehaviour:
@@ -8961,8 +8961,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5e056f78c210147aa1b73fc1db8eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 1652389277}
+  hands: {fileID: 1652389282}
   tmp: {fileID: 2137625527}
+--- !u!1 &1652389282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 26592950525515610, guid: 0d278a0937ec28f4ea3312edd1c67eac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1652389276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1661735515
 GameObject:
   m_ObjectHideFlags: 0
@@ -13608,6 +13614,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6039061175609542947, guid: 3958b01ccb5a2604fbbdcb3c28d01308,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7319572036284169008, guid: 3958b01ccb5a2604fbbdcb3c28d01308,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13759,6 +13770,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432766476479201274, guid: 2deb624c4f8ffa541ab075136801cee8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Seat
       objectReference: {fileID: 0}
     - target: {fileID: 4432766476479201275, guid: 2deb624c4f8ffa541ab075136801cee8,
         type: 3}

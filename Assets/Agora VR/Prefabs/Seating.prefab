@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &1008182354401996351
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253616658208955770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.808716, y: 14.100727, z: 2.6004622}
+  m_Center: {x: 14.783329, y: 4.541219, z: 1.603365}
+--- !u!65 &5678526967712481227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6431237816225649695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.806284, y: 11.902268, z: 3.4252548}
+  m_Center: {x: 11.209254, y: -6.6183615, z: 2.6082654}
 --- !u!1 &4432766476479201274
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +37,7 @@ GameObject:
   - component: {fileID: 4432766476479201275}
   m_Layer: 0
   m_Name: Seating
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 119
@@ -35,6 +61,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &441355161907545987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7155843228400212721}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.808716, y: 14.100727, z: 2.6004622}
+  m_Center: {x: 14.783329, y: 4.541219, z: 1.603365}
+--- !u!65 &8938421460769227657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652051170056109459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.780003, y: 12.582615, z: 3.8009548}
+  m_Center: {x: -0.004116297, y: -6.7781944, z: 2.3996053}
+--- !u!65 &42242492315267045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280412722705511732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.806284, y: 11.902268, z: 3.4252548}
+  m_Center: {x: 11.209254, y: -6.6183615, z: 2.6082654}
 --- !u!1001 &1594952233525108243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46,6 +111,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LowPoly_FarRight_Seating
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830535801506644841, guid: c1fea4427b0547e4585b2a77d72923b2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Seat
       objectReference: {fileID: 0}
     - target: {fileID: 7534990327052153210, guid: c1fea4427b0547e4585b2a77d72923b2,
         type: 3}
@@ -104,6 +174,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1fea4427b0547e4585b2a77d72923b2, type: 3}
+--- !u!1 &5253616658208955770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6830535801506644841, guid: c1fea4427b0547e4585b2a77d72923b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1594952233525108243}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9129853474333814633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7534990327052153210, guid: c1fea4427b0547e4585b2a77d72923b2,
@@ -182,8 +258,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: LowPoly_MiddleLeft_Seating
       objectReference: {fileID: 0}
+    - target: {fileID: 7260929770437935898, guid: e7516b2ca2bc2f94db69c1988355d927,
+        type: 3}
+      propertyPath: m_TagString
+      value: Seat
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7516b2ca2bc2f94db69c1988355d927, type: 3}
+--- !u!1 &6431237816225649695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7260929770437935898, guid: e7516b2ca2bc2f94db69c1988355d927,
+    type: 3}
+  m_PrefabInstance: {fileID: 4432766475965781765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8005994277927036428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5953575085009137929, guid: e7516b2ca2bc2f94db69c1988355d927,
@@ -201,6 +288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LowPoly_FarLeft_Seating
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830535801506644841, guid: c1fea4427b0547e4585b2a77d72923b2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Seat
       objectReference: {fileID: 0}
     - target: {fileID: 7534990327052153210, guid: c1fea4427b0547e4585b2a77d72923b2,
         type: 3}
@@ -264,6 +356,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1fea4427b0547e4585b2a77d72923b2, type: 3}
+--- !u!1 &7155843228400212721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6830535801506644841, guid: c1fea4427b0547e4585b2a77d72923b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4432766476621552024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6131070729266604258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7534990327052153210, guid: c1fea4427b0547e4585b2a77d72923b2,
@@ -281,6 +379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LowPoly_MiddleCenter_Seating
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917120221415675799, guid: d47b75d27bb81594280e9473882584f9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Seat
       objectReference: {fileID: 0}
     - target: {fileID: 3225038543741379972, guid: d47b75d27bb81594280e9473882584f9,
         type: 3}
@@ -339,6 +442,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d47b75d27bb81594280e9473882584f9, type: 3}
+--- !u!1 &4652051170056109459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1917120221415675799, guid: d47b75d27bb81594280e9473882584f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6491267383927335428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8562537222508941184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3225038543741379972, guid: d47b75d27bb81594280e9473882584f9,
@@ -412,8 +521,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: LowPoly_MiddleRight_Seating
       objectReference: {fileID: 0}
+    - target: {fileID: 7260929770437935898, guid: e7516b2ca2bc2f94db69c1988355d927,
+        type: 3}
+      propertyPath: m_TagString
+      value: Seat
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7516b2ca2bc2f94db69c1988355d927, type: 3}
+--- !u!1 &280412722705511732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7260929770437935898, guid: e7516b2ca2bc2f94db69c1988355d927,
+    type: 3}
+  m_PrefabInstance: {fileID: 7431001805219149358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3872920008275937063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5953575085009137929, guid: e7516b2ca2bc2f94db69c1988355d927,

@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class HeadMovement : MonoBehaviour
 {
     [SerializeField]
     private float timer;
     private float totalTime;
-    private float sphereRadius = 2.0f;
+    private float sphereRadius = 1.0f;
 
     [SerializeField]
     private TextMeshPro tmp;
@@ -21,6 +22,8 @@ public class HeadMovement : MonoBehaviour
 
     void Update()
     {
+        totalTime += Time.deltaTime;
+        TimeSpan time = TimeSpan.FromSeconds(Mathf.Floor(totalTime));
 
         RaycastHit hit;
 
@@ -28,6 +31,6 @@ public class HeadMovement : MonoBehaviour
             if(hit.collider.tag == "Seat")
                 timer += Time.deltaTime;
 
-        tmp.text = "timer= " + Mathf.FloorToInt(timer) + "\ntotalTime= " + Mathf.FloorToInt(totalTime);
+        tmp.text = "timer= " + Mathf.FloorToInt(timer) + "\ntotalTime= " + time.ToString(@"hh\:mm\:ss");
     }
 }

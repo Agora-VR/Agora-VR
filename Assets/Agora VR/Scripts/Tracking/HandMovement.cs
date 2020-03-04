@@ -20,19 +20,19 @@ public class HandMovement : MonoBehaviour
         lastPosition = transform.position;
         distanceTravelled = 0.0f;
         seconds = 0.0f;
-        track = hands.GetComponent<OVRHand>();
+        // track = hands.GetComponent<OVRHand>();
     }
 
     void Update()
     {
         float oldDistance = distanceTravelled;
-        if (track.IsTracked)
-            distanceTravelled += Vector3.Distance(transform.position, lastPosition);
+        // if (track.IsTracked)
+        distanceTravelled += Vector3.Distance(transform.position, lastPosition);
         lastPosition = transform.position;
 
 
 
-        if (distanceTravelled - oldDistance > 0.01f && track.IsTracked)
+        if (distanceTravelled - oldDistance > 0.01f)
         {
             seconds += Time.deltaTime;
             Debug.Log(seconds);

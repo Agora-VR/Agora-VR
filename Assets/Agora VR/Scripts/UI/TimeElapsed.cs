@@ -16,8 +16,8 @@ public class TimeElapsed : MonoBehaviour
 
     void Start()
     {
-        startTime = Time.time;
-        currentTime = startTime;
+        startTime = 0;
+        currentTime = 0;
 
         tmp = GetComponent<TextMeshPro>();
     }

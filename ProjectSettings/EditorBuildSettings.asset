@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Agora VR/Main Menu.unity
+    guid: 3f21fe31b54097740a25c3cc4be6a69c
+  - enabled: 1
     path: Assets/Agora VR/Public Speaking Scene.unity
     guid: e85858c250a8ebb4aae20e5ef6d91143
   m_configObjects: {}

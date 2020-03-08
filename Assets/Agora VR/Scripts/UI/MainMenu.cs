@@ -13,11 +13,12 @@ public class MainMenu : MonoBehaviour
 
 	void Start ()
     {
-        DebugUIBuilder.instance.AddLabel("Welcome To Agora VR");
-        DebugUIBuilder.instance.AddButton("Auditorium", StartAuditorium);
-        DebugUIBuilder.instance.AddButton("Meeting Room", StartMeetingRoom);
+        UIBuilder.instance.AddLogo();
+        UIBuilder.instance.AddLabel("Welcome To Agora VR");
+        UIBuilder.instance.AddButton("Auditorium", StartAuditorium);
+        UIBuilder.instance.AddButton("Meeting Room", StartMeetingRoom);
 
-        DebugUIBuilder.instance.Show();
+        UIBuilder.instance.Show();
         inMenu = true;
 	}
 
@@ -31,8 +32,8 @@ public class MainMenu : MonoBehaviour
     {
         if(OVRInput.GetDown(OVRInput.Button.Two) || OVRInput.GetDown(OVRInput.Button.Start))
         {
-            if (inMenu) DebugUIBuilder.instance.Hide();
-            else DebugUIBuilder.instance.Show();
+            if (inMenu) UIBuilder.instance.Hide();
+            else UIBuilder.instance.Show();
             inMenu = !inMenu;
         }
     }

@@ -13,10 +13,33 @@ public class MainMenu : MonoBehaviour
 
 	void Start ()
     {
+        /* Center Panel (index 0) */
+        UIBuilder.instance.AddSpacer();
         UIBuilder.instance.AddLogo();
-        UIBuilder.instance.AddLabel("Welcome To Agora VR");
+        UIBuilder.instance.AddLabel("Scene Selection");
+        UIBuilder.instance.AddDivider();
         UIBuilder.instance.AddButton("Auditorium", StartAuditorium);
         UIBuilder.instance.AddButton("Meeting Room", StartMeetingRoom);
+
+        /* Right Panel (index 1) */
+        UIBuilder.instance.AddLabel2("Capstone Group S20-61", 1);
+        UIBuilder.instance.AddLabel2("Members:", 1);
+        UIBuilder.instance.AddBody("Aryeh Ness\nDaniel Nguyen\nTed Moseley\nMichaelTruong", "center", 1);
+        UIBuilder.instance.AddLabel2("Advisor:", 1);
+        UIBuilder.instance.AddBody("Dr. Grigore Burdea", "center", 1);
+
+
+        /* Left Panel (index 2) */
+        UIBuilder.instance.AddLabel2("Agora VR Main Menu", 2);
+        UIBuilder.instance.AddSpacer(2);
+        UIBuilder.instance.AddBody("Welcome to Agora VR, a virtual reality application designed " +
+            "specifically for people who struggle with Agoraphobia or have social anxiety disorder(s). ", "justified", 2);
+        UIBuilder.instance.AddSpacer(2); UIBuilder.instance.AddSpacer(2);
+        UIBuilder.instance.AddBody("Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore " +
+            "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco " +
+            "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in " +
+            "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "justified", 2);
+
 
         UIBuilder.instance.Show();
         inMenu = true;

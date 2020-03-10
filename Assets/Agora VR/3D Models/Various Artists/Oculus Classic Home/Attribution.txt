@@ -1,5 +1,6 @@
-Oculus Classic Home
-By Oculus VR
+*Oculus Classic Home*
+By: Oculus VR
 
-Blender Export
-By @Elin#1602 from "Quest Homes" Discord Server
+*Blender Export*
+By: Elin Höhler
+(Thanks for the help Elin!)

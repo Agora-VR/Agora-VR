@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224113878955223432}
   - component: {fileID: 222546433005716318}
-  - component: {fileID: 3192602799215513666}
+  - component: {fileID: 7738198937512309971}
   m_Layer: 5
   m_Name: UILogo
   m_TagString: Untagged
@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 512, y: 374}
+  m_SizeDelta: {x: 400, y: 292}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &222546433005716318
 CanvasRenderer:
@@ -45,7 +45,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605166081573656}
   m_CullTransparentMesh: 0
---- !u!114 &3192602799215513666
+--- !u!114 &7738198937512309971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

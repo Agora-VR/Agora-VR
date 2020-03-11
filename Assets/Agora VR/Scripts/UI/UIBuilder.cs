@@ -10,6 +10,7 @@ language governing permissions and limitations under the license.
 ************************************************************************************/
 
 // Modified by Daniel Nguyen
+// for Agora VR
 
 using System.Collections;
 using System.Collections.Generic;

@@ -1,8 +1,11 @@
-﻿using System.Collections;
+﻿/* Agora VR */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[AddComponentMenu("Agora VR/Tracking/Hand Movement")]
 public class HandMovement : MonoBehaviour
 {
     private Vector3 lastPosition;

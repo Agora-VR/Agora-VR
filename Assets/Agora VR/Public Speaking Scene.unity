@@ -1705,6 +1705,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 643779131}
+  - component: {fileID: 643779132}
+  - component: {fileID: 643779133}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -1730,6 +1732,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643779132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643779130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43288a456b1b8845870dc291a785a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 561122234}
+  leftHand: {fileID: 1652389279}
+  rightHand: {fileID: 1652389278}
+--- !u!114 &643779133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643779130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f29267190c5bb5499bd8c1e0b4473b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serviceUrl: https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/d99148df-932c-4d91-8928-a070cd7905f3
+  _iamApikey: eSvkNoA4UQWHjg18oyKAA_F7p-hADruliZre3Wzy4zM6
 --- !u!1001 &656774143
 PrefabInstance:
   m_ObjectHideFlags: 0

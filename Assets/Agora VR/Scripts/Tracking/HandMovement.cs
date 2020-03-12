@@ -6,7 +6,7 @@ using TMPro;
 public class HandMovement : MonoBehaviour
 {
     private Vector3 lastPosition;
-    private float distanceTravelled;
+    private float distanceTraveled;
     private float seconds;
     private OVRHand track;
 
@@ -18,26 +18,35 @@ public class HandMovement : MonoBehaviour
     void Start()
     {
         lastPosition = transform.position;
-        distanceTravelled = 0.0f;
+        distanceTraveled = 0.0f;
         seconds = 0.0f;
         // track = hands.GetComponent<OVRHand>();
     }
 
+    public float getDistTraveled()
+    {
+        return distanceTraveled;
+    }
+
+    public float getHandTime()
+    {
+        return seconds;
+    }
+
     void Update()
     {
-        float oldDistance = distanceTravelled;
-        // if (track.IsTracked)
-        distanceTravelled += Vector3.Distance(transform.position, lastPosition);
+        float oldDistance = distanceTraveled;
         lastPosition = transform.position;
 
 
-
-        if (distanceTravelled - oldDistance > 0.01f)
+        if (distanceTraveled - oldDistance > 0.01f)
         {
+            // if (track.IsTracked)
+            distanceTraveled += Vector3.Distance(transform.position, lastPosition);
             seconds += Time.deltaTime;
             Debug.Log(seconds);
         }
 
-        tmp.text = "distanceTraveled= " + Mathf.FloorToInt(distanceTravelled) + "\nseconds= " + Mathf.FloorToInt(seconds);
+        tmp.text = "distanceTraveled= " + Mathf.FloorToInt(distanceTraveled) + "\nseconds= " + Mathf.FloorToInt(seconds);
     }
 }

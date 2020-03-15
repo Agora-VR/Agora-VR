@@ -10,6 +10,7 @@ language governing permissions and limitations under the license.
 ************************************************************************************/
 
 // Modified by Daniel Nguyen
+// for Agora VR
 
 using System.Collections;
 using System.Collections.Generic;
@@ -46,8 +47,17 @@ public class UIBuilder : MonoBehaviour
   [SerializeField]
   private RectTransform radioPrefab = null;
 
-  [SerializeField] // Added
-  private RectTransform logoPrefab = null;
+  /* Added Prefabs */
+    [SerializeField]
+    private RectTransform logoPrefab = null;
+    [SerializeField]
+    private RectTransform spacerPrefab = null;
+    [SerializeField]
+    private RectTransform label2Prefab = null;
+    [SerializeField]
+    private RectTransform bodyJusPrefab = null;
+    [SerializeField]
+    private RectTransform bodyCenPrefab = null;
 
   [SerializeField]
   private GameObject uiHelpersToInstantiate = null;
@@ -315,12 +325,44 @@ public class UIBuilder : MonoBehaviour
     return rt;
   }
 
-  public RectTransform AddLogo(int targetCanvas = 0) // Added
-  {
-    RectTransform rt = GameObject.Instantiate(logoPrefab).GetComponent<RectTransform>();
-    AddRect(rt, targetCanvas);
-    return rt;
-  }
+  /* Added Functions */
+    public RectTransform AddLogo(int targetCanvas = 0) // Added
+    {
+      RectTransform rt = GameObject.Instantiate(logoPrefab).GetComponent<RectTransform>();
+      AddRect(rt, targetCanvas);
+      return rt;
+    }
+
+    public RectTransform AddSpacer(int targetCanvas = 0) // Added
+    {
+      RectTransform rt = GameObject.Instantiate(spacerPrefab).GetComponent<RectTransform>();
+      AddRect(rt, targetCanvas);
+      return rt;
+    }
+
+    public RectTransform AddLabel2(string label, int targetCanvas = 0)
+    {
+      RectTransform rt = GameObject.Instantiate(label2Prefab).GetComponent<RectTransform>();
+      rt.GetComponent<TextMeshPro>().text = label;
+      AddRect(rt, targetCanvas);
+      return rt;
+    }
+
+    public RectTransform AddBody(string label, string alignment, int targetCanvas = 0)
+    {
+      RectTransform rt;
+
+      switch(alignment)
+      {
+        case "center": rt = GameObject.Instantiate(bodyCenPrefab).GetComponent<RectTransform>(); break;
+        case "justified": rt = GameObject.Instantiate(bodyJusPrefab).GetComponent<RectTransform>(); break;
+        default: rt = GameObject.Instantiate(bodyJusPrefab).GetComponent<RectTransform>(); break;
+      }
+
+      rt.GetComponent<TextMeshPro>().text = label;
+      AddRect(rt, targetCanvas);
+      return rt;
+    }
 
   public void ToggleLaserPointer(bool isOn)
   {

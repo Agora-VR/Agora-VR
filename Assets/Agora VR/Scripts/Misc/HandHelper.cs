@@ -15,6 +15,7 @@ permissions and limitations under the License.
 ************************************************************************************/
 
 // Modified by Daniel Nguyen
+// for Agora VR
 
 using UnityEngine;
 using System.Collections;

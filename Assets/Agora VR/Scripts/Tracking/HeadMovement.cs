@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿/* Agora VR */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
 
+[AddComponentMenu("Agora VR/Tracking/Head Movement")]
 public class HeadMovement : MonoBehaviour
 {
     [SerializeField]

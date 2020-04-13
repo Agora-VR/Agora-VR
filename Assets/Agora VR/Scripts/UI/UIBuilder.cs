@@ -21,6 +21,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 #endif
 
+[AddComponentMenu("Agora VR/Oculus/UI Builder")]
 public class UIBuilder : MonoBehaviour
 {
   // room for extension:
@@ -199,6 +200,27 @@ public class UIBuilder : MonoBehaviour
     }
   }
 
+  public void Destroy()
+  {
+    Transform content = gameObject.transform.GetChild(0);
+    Transform contentR = gameObject.transform.GetChild(1);
+    Transform contentL = gameObject.transform.GetChild(2);
+
+    foreach (Transform child in content) {
+      GameObject.Destroy(child.gameObject);
+    }
+
+    foreach (Transform child in contentR) {
+      GameObject.Destroy(child.gameObject);
+    }
+
+    foreach (Transform child in contentL) {
+      GameObject.Destroy(child.gameObject);
+    }
+
+    Hide();
+  }
+
   // Currently a slow brute-force method that lays out every element.
   // As this is intended as a debug UI, it might be fine, but there are many simple optimizations we can make.
   private void Relayout()
@@ -260,6 +282,10 @@ public class UIBuilder : MonoBehaviour
   public RectTransform AddSlider(string label, float min, float max, OnSlider onValueChanged, bool wholeNumbersOnly = false, int targetCanvas = 0)
   {
     RectTransform rt = (RectTransform)GameObject.Instantiate(sliderPrefab);
+
+    var textElementsInSlider = rt.GetComponentsInChildren<Text>();
+    textElementsInSlider[0].text = label;
+
     Slider s = rt.GetComponentInChildren<Slider>();
     s.minValue = min;
     s.maxValue = max;

@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: e4524b1847035d148b59175a2f65881c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Clavicle.L
+    100004: Clavicle.R
+    100006: female_accessory
+    100008: female_arm
+    100010: female_chest
+    100012: female_feet
+    100014: female_forearm
+    100016: female_hat
+    100018: female_head
+    100020: female_legs
+    100022: //RootNode
+    100024: female_pants
+    100026: female_pelvis
+    100028: female_shirt
+    100030: female_shoes
+    100032: female_spine
+    100034: Foot.L
+    100036: Foot.R
+    100038: Forearm.L
+    100040: Forearm.R
+    100042: Hand.L
+    100044: Hand.R
+    100046: Head
+    100048: Head_end
+    100050: hips
+    100052: Index.1.L
+    100054: Index.1.R
+    100056: Index.2.L
+    100058: Index.2.R
+    100060: Index.3.L
+    100062: Index.3.L_end
+    100064: Index.3.R
+    100066: Index.3.R_end
+    100068: Little.1.L
+    100070: Little.1.R
+    100072: Little.2.R
+    100074: Little.3.L
+    100076: Little.3.L_end
+    100078: Little.3.R
+    100080: Little.3.R_end
+    100082: little_l_2
+    100084: Middle.1.L
+    100086: Middle.1.R
+    100088: Middle.2.L
+    100090: Middle.2.R
+    100092: Middle.3.L
+    100094: Middle.3.L_end
+    100096: Middle.3.R
+    100098: Middle.3.R_end
+    100100: Neck
+    100102: Ring.1.L
+    100104: Ring.1.R
+    100106: Ring.2.L
+    100108: Ring.2.R
+    100110: Ring.3.L
+    100112: Ring.3.L_end
+    100114: Ring.3.R
+    100116: Ring.3.R_end
+    100118: Root
+    100120: Shin.L
+    100122: Shin.R
+    100124: Shoulder.L
+    100126: Shoulder.R
+    100128: Spine1
+    100130: Spine2
+    100132: Thigh.L
+    100134: Thigh.R
+    100136: Thumb.1.L
+    100138: Thumb.1.R
+    100140: Thumb.2.L
+    100142: Thumb.2.R
+    100144: Thumb.3.L
+    100146: Thumb.3.L_end
+    100148: Thumb.3.R
+    100150: Thumb.3.R_end
+    100152: Toe.L
+    100154: Toe.L_end
+    100156: Toe.R
+    100158: Toe.R_end
+    400000: Chest
+    400002: Clavicle.L
+    400004: Clavicle.R
+    400006: female_accessory
+    400008: female_arm
+    400010: female_chest
+    400012: female_feet
+    400014: female_forearm
+    400016: female_hat
+    400018: female_head
+    400020: female_legs
+    400022: //RootNode
+    400024: female_pants
+    400026: female_pelvis
+    400028: female_shirt
+    400030: female_shoes
+    400032: female_spine
+    400034: Foot.L
+    400036: Foot.R
+    400038: Forearm.L
+    400040: Forearm.R
+    400042: Hand.L
+    400044: Hand.R
+    400046: Head
+    400048: Head_end
+    400050: hips
+    400052: Index.1.L
+    400054: Index.1.R
+    400056: Index.2.L
+    400058: Index.2.R
+    400060: Index.3.L
+    400062: Index.3.L_end
+    400064: Index.3.R
+    400066: Index.3.R_end
+    400068: Little.1.L
+    400070: Little.1.R
+    400072: Little.2.R
+    400074: Little.3.L
+    400076: Little.3.L_end
+    400078: Little.3.R
+    400080: Little.3.R_end
+    400082: little_l_2
+    400084: Middle.1.L
+    400086: Middle.1.R
+    400088: Middle.2.L
+    400090: Middle.2.R
+    400092: Middle.3.L
+    400094: Middle.3.L_end
+    400096: Middle.3.R
+    400098: Middle.3.R_end
+    400100: Neck
+    400102: Ring.1.L
+    400104: Ring.1.R
+    400106: Ring.2.L
+    400108: Ring.2.R
+    400110: Ring.3.L
+    400112: Ring.3.L_end
+    400114: Ring.3.R
+    400116: Ring.3.R_end
+    400118: Root
+    400120: Shin.L
+    400122: Shin.R
+    400124: Shoulder.L
+    400126: Shoulder.R
+    400128: Spine1
+    400130: Spine2
+    400132: Thigh.L
+    400134: Thigh.R
+    400136: Thumb.1.L
+    400138: Thumb.1.R
+    400140: Thumb.2.L
+    400142: Thumb.2.R
+    400144: Thumb.3.L
+    400146: Thumb.3.L_end
+    400148: Thumb.3.R
+    400150: Thumb.3.R_end
+    400152: Toe.L
+    400154: Toe.L_end
+    400156: Toe.R
+    400158: Toe.R_end
+    2100000: Palette
+    2300000: female_accessory
+    2300002: female_arm
+    2300004: female_chest
+    2300006: female_feet
+    2300008: female_forearm
+    2300010: female_hat
+    2300012: female_head
+    2300014: female_legs
+    2300016: female_pants
+    2300018: female_pelvis
+    2300020: female_shirt
+    2300022: female_shoes
+    2300024: female_spine
+    3300000: female_accessory
+    3300002: female_arm
+    3300004: female_chest
+    3300006: female_feet
+    3300008: female_forearm
+    3300010: female_hat
+    3300012: female_head
+    3300014: female_legs
+    3300016: female_pants
+    3300018: female_pelvis
+    3300020: female_shirt
+    3300022: female_shoes
+    3300024: female_spine
+    4300000: female_shirt
+    4300002: female_shoes
+    4300004: female_hat
+    4300006: female_accessory
+    4300008: female_pants
+    4300010: female_forearm
+    4300012: female_feet
+    4300014: female_legs
+    4300016: female_pelvis
+    4300018: female_spine
+    4300020: female_head
+    4300022: female_chest
+    4300024: female_arm
+    9500000: //RootNode
+    13700000: female_accessory
+    13700002: female_arm
+    13700004: female_chest
+    13700006: female_feet
+    13700008: female_forearm
+    13700010: female_hat
+    13700012: female_head
+    13700014: female_legs
+    13700016: female_pants
+    13700018: female_pelvis
+    13700020: female_shirt
+    13700022: female_shoes
+    13700024: female_spine
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palette
+    second: {fileID: 2100000, guid: 3f3d17836a87ae942ac524d7020ac829, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton:
+    - name: female_lod3(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_shirt
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_shoes
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_hat
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_accessory
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_pants
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_forearm
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: -0.00000023841858, z: 0.000000044703405}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_feet
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_legs
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_pelvis
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_spine
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: -0.00000023841858, z: 0.000000044703405}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_head
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_chest
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: -0.00000023841858, z: 0.000000044703405}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: female_arm
+      parentName: female_lod3(Clone)
+      position: {x: -0, y: -0.00000023841858, z: 0.000000044703405}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

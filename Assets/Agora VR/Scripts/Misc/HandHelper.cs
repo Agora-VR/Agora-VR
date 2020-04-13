@@ -20,7 +20,7 @@ permissions and limitations under the License.
 using UnityEngine;
 using System.Collections;
 
-[AddComponentMenu("Agora VR/3rd Party/Oculus Hand Helper")]
+[AddComponentMenu("Agora VR/Oculus/Oculus Hand Helper")]
 
 /// <summary>
 /// Simple helper script that conditionally enables rendering of a controller if it is connected.

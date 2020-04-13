@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Agora VR/Public Speaking Scene.unity
     guid: e85858c250a8ebb4aae20e5ef6d91143
+  - enabled: 1
+    path: Assets/Agora VR/Meeting Room Scene.unity
+    guid: 226f7ae74feaa4e42ad9851b22f3c03a
+  - enabled: 1
+    path: Assets/Agora VR/Session Summary.unity
+    guid: 36f1828e084c0464783b9df07f6a702e
   m_configObjects: {}

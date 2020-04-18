@@ -8,6 +8,8 @@ TagManager:
   - NPC
   - DDOL
   - MainMenu
+  - Cam1
+  - Cam2
   layers:
   - Default
   - TransparentFX

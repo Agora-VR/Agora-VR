@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1930889059
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: edd1fd0a54f394b184c5bf2a8fda788f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/AnimationTexture/male_1.bytes
+Dependencies: []

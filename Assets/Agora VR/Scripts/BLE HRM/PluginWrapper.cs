@@ -14,7 +14,7 @@ public class PluginWrapper : MonoBehaviour
     [ReadOnly] public string _pluginName = "com.rutgersece.capstone2020.agoravr.blelibrary.AndroidBLE";
     private const string pluginName = "com.rutgersece.capstone2020.agoravr.blelibrary.AndroidBLE";
 
-    [SerializeField] private string BLEDeviceName = "AgoraVR-BLE"; //TODO: Placeholder device name
+    [SerializeField] private string BLEDeviceName = "AgoraVR-BLE";
     [SerializeField] private string serviceUUID = "8bff20de-32fb-4350-bddb-afe103ef9640";
     [SerializeField] private string heartRateUUID = "1c8dd778-e8c3-45b0-a9f3-48c33a400315";
     [SerializeField] private string pulseOximetryUUID = "b8ae0c39-6204-407c-aa43-43087ec29a63";
@@ -32,6 +32,9 @@ public class PluginWrapper : MonoBehaviour
     private bool stop = false;
     private static AndroidJavaClass _pluginClass;
     private static AndroidJavaObject _pluginInstance;
+
+    public int curHR;
+    public float curSpO2;
 
     public static AndroidJavaClass PluginClass
     {
@@ -84,10 +87,13 @@ public class PluginWrapper : MonoBehaviour
     }
 
     // Gets data from plugin at intervals of 'delay' seconds.
-    private IEnumerator getData()
+    public IEnumerator getData()
     {
-        HeartRate.text = String.Format("Heart Rate: {0}", PluginInstance.Get<int>("heartRate"));
-        PulseOximetry.text = String.Format("Blood Oxygenation: {0:f}", PluginInstance.Get<float>("pulseOximetry"));
+        curHR = PluginInstance.Get<int>("heartRate");
+        curSpO2 = PluginInstance.Get<float>("pulseOximetry");
+
+        HeartRate.text = String.Format("Heart Rate: {0}", curHR);
+        PulseOximetry.text = String.Format("Blood Oxygenation: {0:f}", curSpO2);
 
         yield return new WaitForSeconds(delay);
         StartCoroutine(getData());
@@ -100,7 +106,7 @@ public class PluginWrapper : MonoBehaviour
             // do nothing
         } else if (PluginInstance.Get<bool>("discovered")) {
             ConnectDiscover.text = "Services Discovered.";
-            StartCoroutine(getData());
+            // StartCoroutine(getData());   <-- getData() is now managed by SessionManager.cs
         } else {
             ConnectDiscover.text = "Discovering Services...";
             yield return new WaitForSeconds(1);

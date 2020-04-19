@@ -546,6 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScene: 0
   menu: {fileID: 180430939}
+  HRMSaveInterval: 4
 --- !u!1001 &715879049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1401,7 +1402,7 @@ GameObject:
   - component: {fileID: 1319574753}
   m_Layer: 0
   m_Name: PluginScript
-  m_TagString: Untagged
+  m_TagString: Plugin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1428,7 +1429,9 @@ MonoBehaviour:
   ConnectDiscover: {fileID: 873586265}
   HeartRate: {fileID: 2082962792}
   PulseOximetry: {fileID: 2120625740}
-  delay: 1
+  delay: 4
+  curHR: 0
+  curSpO2: 0
 --- !u!4 &1319574754
 Transform:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine.UI;
 using IBM.Watson.SpeechToText.V1;
 using IBM.Cloud.SDK;
@@ -19,16 +20,19 @@ namespace IBM.Watsson.Examples
         [SerializeField]
         private string _iamApikey;
 
+        [SerializeField]
+        private AudioSource _audioSource;
 
         private string _recognizeModel;
 
-
+        private float time;
         private int _recordingRoutine = 0;
         private string _microphoneID = null;
         private AudioClip _recording = null;
-        private int _recordingBufferSize = 1;
-        private int _recordingHZ = 22050;
+        private int _recordingBufferSize = 30;
+        private int _recordingHZ = 44100;
         private List<string> finalText = new List<string>();
+        private bool done;
 
         private SpeechToTextService _service;
 
@@ -36,6 +40,20 @@ namespace IBM.Watsson.Examples
         {
             LogSystem.InstallDefaultReactors();
             Runnable.Run(CreateService());
+            time = 0.0f;
+            done = false;
+        }
+
+        void Update()
+        {
+            if (time >= 32.0f && !done)
+            {
+                string translation = getFinalText();
+                File.WriteAllText(Application.persistentDataPath + "/speech.text", translation);
+                done = true;
+            }
+
+            time += Time.deltaTime;
         }
 
         private IEnumerator CreateService()
@@ -105,7 +123,7 @@ namespace IBM.Watsson.Examples
         {
             if (_recordingRoutine != 0)
             {
-                Microphone.End(_microphoneID);
+                //Microphone.End(_microphoneID);
                 Runnable.Stop(_recordingRoutine);
                 _recordingRoutine = 0;
             }
@@ -121,7 +139,7 @@ namespace IBM.Watsson.Examples
         private IEnumerator RecordingHandler()
         {
             Log.Debug("ExampleStreaming.RecordingHandler()", "devices: {0}", Microphone.devices);
-            _recording = Microphone.Start(_microphoneID, true, _recordingBufferSize, _recordingHZ);
+            _recording = _audioSource.clip;
             yield return null;      // let _recordingRoutine get set..
 
             if (_recording == null)

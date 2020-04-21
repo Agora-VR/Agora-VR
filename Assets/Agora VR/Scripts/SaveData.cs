@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using System.IO;
 using System;
+using NAudio;
 
 namespace IBM.Watsson.Examples
 {
@@ -28,6 +30,8 @@ namespace IBM.Watsson.Examples
         string fileName;
         int i = 1;
 
+        private AudioSource myAudioSource;
+        private string microphone;
         // Start is called before the first frame update
         void Start()
         {
@@ -38,8 +42,14 @@ namespace IBM.Watsson.Examples
             theDate = System.DateTime.Now.ToString("MM/dd/yyyy");
             fileName = System.DateTime.Now.ToString("MM-dd-yyyy_hh-mm-ss");
             speechScript = gameObject.GetComponent<SpeechToText>();
-        }
 
+
+
+            microphone = Microphone.devices[0].ToString();
+            myAudioSource = head.GetComponent<AudioSource>();
+        }
+     
+ 
         private void Save()
         {
             float headTimer = headScript.getHeadTimer();
@@ -53,7 +63,7 @@ namespace IBM.Watsson.Examples
             string speechString = speechScript.getFinalText();
             string originalText = "our project focuses on the treatment of social anxiety and social phobias by utilizing VR technology for psychological and cognitive therapy";
             float score = 1-(float)Compute(speechString,originalText)/(float)originalText.Length;
-            double score2 = CalculateSimilarity(speechString, originalText);
+            double score2 = 0;
 
             string[] contents = new string[]
             {
@@ -73,18 +83,44 @@ namespace IBM.Watsson.Examples
             };
            
             string saveString = string.Join(SAVE_SEPARATOR, contents);
-            File.WriteAllText(Application.dataPath + "/save_" + fileName + ".text", saveString);
+            File.WriteAllText(Application.persistentDataPath + fileName + ".text", saveString);
+            //myAudioSource.Play();
 
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (headScript.getTotalTime() >= 20.0f && i == 1)
+            if (headScript.getTotalTime() >= 24.0f && i == 1)
             {
+                Debug.Log(microphone);
+
+                int length = myAudioSource.clip.samples * myAudioSource.clip.channels;
+
+                float[] data = new float[length];
+                myAudioSource.clip.GetData(data, 0);
+
+                float[] finaldata = new float[2 * length];
+
+                for (int i = 0; i < length; i++)
+                {
+                    finaldata[2 * i] = data[i];
+                    finaldata[2 * i + 1] = data[i];
+                }
+
+                AudioClip result = AudioClip.Create("Final", 2*length, 1, 44100, false);
+                result.SetData(finaldata, 0);
+
                 Save();
                 i++;
+                //myAudioSource.clip = speechScript.getAudio();
+                //myAudioSource = gameObject.GetComponent<AudioSource>();
+                //SavWav.Save("myfile2", speechScript.getAudio());
+                //EncodeMP3.convert(speechScript.getAudio(), Application.persistentDataPath + "/myfile2.mp3", 64);
+                EncodeMP3.convert(result, Application.persistentDataPath + "/myfile3.mp3", 128);
+                //myAudioSource.Play();
             }
+
         }
 
         public static int Compute(string s, string t)
@@ -122,52 +158,5 @@ namespace IBM.Watsson.Examples
             }
             return d[n, m];
         }
-        int ComputeLevenshteinDistance(string source, string target)
-        {
-            if ((source == null) || (target == null)) return 0;
-            if ((source.Length == 0) || (target.Length == 0)) return 0;
-            if (source == target) return source.Length;
-
-            int sourceWordCount = source.Length;
-            int targetWordCount = target.Length;
-
-            // Step 1
-            if (sourceWordCount == 0)
-                return targetWordCount;
-
-            if (targetWordCount == 0)
-                return sourceWordCount;
-
-            int[,] distance = new int[sourceWordCount + 1, targetWordCount + 1];
-
-            // Step 2
-            for (int i = 0; i <= sourceWordCount; distance[i, 0] = i++) ;
-            for (int j = 0; j <= targetWordCount; distance[0, j] = j++) ;
-
-            for (int i = 1; i <= sourceWordCount; i++)
-            {
-                for (int j = 1; j <= targetWordCount; j++)
-                {
-                    // Step 3
-                    int cost = (target[j - 1] == source[i - 1]) ? 0 : 1;
-
-                    // Step 4
-                    distance[i, j] = Math.Min(Math.Min(distance[i - 1, j] + 1, distance[i, j - 1] + 1), distance[i - 1, j - 1] + cost);
-                }
-            }
-
-            return distance[sourceWordCount, targetWordCount];
-        }
-
-        double CalculateSimilarity(string source, string target)
-        {
-            if ((source == null) || (target == null)) return 0.0;
-            if ((source.Length == 0) || (target.Length == 0)) return 0.0;
-            if (source == target) return 1.0;
-
-            int stepsToSame = ComputeLevenshteinDistance(source, target);
-            return (1.0 - ((double)stepsToSame / (double)Math.Max(source.Length, target.Length)));
-        }
-
     }
 }

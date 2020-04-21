@@ -1,0 +1,168 @@
+﻿
+-   This software uses the Microncode components and libraries which licensed under the MS-PL 
+    and its source code can be downloaded at https://www.microncode.com.
+
+		Microsoft Public License (Ms-PL)
+
+		This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
+
+		1. Definitions
+		The terms “reproduce,” “reproduction,” “derivative works,” and “distribution” have the same meaning here as under U.S. copyright law.
+
+		A “contribution” is the original software, or any additions or changes to the software.
+
+		A “contributor” is any person that distributes its contribution under this license.
+
+		“Licensed patents” are a contributor’s patent claims that read directly on its contribution.
+
+		2. Grant of Rights
+		(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+
+		(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+
+		3. Conditions and Limitations
+		(A) No Trademark License- This license does not grant you rights to use any contributors’ name, logo, or trademarks.
+
+		(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+
+		(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+
+		(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+
+		(E) The software is licensed “as-is.” You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+
+		https://opensource.org/licenses/MS-PL
+
+-   This software uses the CSCore library which licensed under the MS-PL 
+    and its source code can be downloaded at https://github.com/filoe/cscore.
+
+		Microsoft Public License (Ms-PL)
+
+		This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
+
+		1. Definitions
+		The terms “reproduce,” “reproduction,” “derivative works,” and “distribution” have the same meaning here as under U.S. copyright law.
+
+		A “contribution” is the original software, or any additions or changes to the software.
+
+		A “contributor” is any person that distributes its contribution under this license.
+
+		“Licensed patents” are a contributor’s patent claims that read directly on its contribution.
+
+		2. Grant of Rights
+		(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+
+		(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+
+		3. Conditions and Limitations
+		(A) No Trademark License- This license does not grant you rights to use any contributors’ name, logo, or trademarks.
+
+		(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+
+		(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+
+		(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+
+		(E) The software is licensed “as-is.” You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+
+		https://opensource.org/licenses/MS-PL
+
+
+-   This software uses the CSCore.Ffmpeg library which licensed under the 
+	LGPLv2.1 and its source code can be downloaded at https://github.com/filoe/cscore/tree/master/CSCore.Ffmpeg.
+
+		LGPLv2.1
+
+		This library is free software; you can redistribute it and/or
+		modify it under the terms of the GNU Lesser General Public
+		License as published by the Free Software Foundation; either
+		version 2.1 of the License, or (at your option) any later version.
+
+		This library is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+		Lesser General Public License for more details.
+
+		You should have received a copy of the GNU Lesser General Public
+		License along with this library; if not, write to the Free Software
+		Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+		https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+
+
+-   This software uses the TagLib# library which licensed under the LGPL 
+    and its source code can be downloaded at https://github.com/mono/taglib-sharp. 
+
+    	LGPL
+
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU Lesser General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU Lesser General Public License for more details.
+
+		You should have received a copy of the GNU Lesser General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+		https://www.gnu.org/licenses/lgpl.html
+
+
+-   This software uses the MACDll.dll and its source code can be downloaded at https://www.monkeysaudio.com/index.html. 
+
+		Monkey's Audio Program License Agreement
+		Monkey's Audio is completely free for personal, educational, or commercial use.
+		Although the software has been tested thoroughly, the author is in no way responsible for damages due to bugs or misuse.
+		The redistribution of Monkey's Audio is only allowed in cases where the original installer and components therein have not been modified.
+		The use of Monkey's Audio or any component thereof from another program requires compliance with the 'Monkey's Audio SDK and Source Code License Agreement'.
+		Installing and using Monkey's Audio signifies the acceptance of these terms. If you do not agree with any of the above terms, you must cease using Monkey's Audio and remove it from your storage device.
+		Monkey's Audio SDK and Source Code License Agreement
+		The Monkey's Audio SDK and source code can be freely used to add APE format playback, encoding, or tagging support to any product, free or commercial.
+		Monkey's Audio source can be included in GPL and open-source software, although Monkey's Audio itself will not be subjected to external licensing requirements or other viral source restrictions.
+		Code changes and improvements must be contributed back to the Monkey's Audio project or made freely available, unless exempted by written consent of the author.
+		Any source code, ideas, or libraries used must be plainly acknowledged in the software using the code.
+		Although the software has been tested thoroughly, the author is in no way responsible for damages due to bugs or misuse.
+		If you do not completely agree with all of the previous stipulations, you must cease using this source code and remove it from your storage device.
+		Contact
+		Please use the details here for licensing questions or requests.
+
+		https://monkeysaudio.com/license.html
+
+
+-   This software uses the vorbis.dll, ogg.dll and vorbisfile.dll libraries and its source code can be downloaded at https://xiph.org/vorbis/. 
+
+		Copyright (c) 2002-2008 Xiph.org Foundation
+
+		Redistribution and use in source and binary forms, with or without
+		modification, are permitted provided that the following conditions
+		are met:
+
+		- Redistributions of source code must retain the above copyright
+		notice, this list of conditions and the following disclaimer.
+
+		- Redistributions in binary form must reproduce the above copyright
+		notice, this list of conditions and the following disclaimer in the
+		documentation and/or other materials provided with the distribution.
+
+		- Neither the name of the Xiph.org Foundation nor the names of its
+		contributors may be used to endorse or promote products derived from
+		this software without specific prior written permission.
+
+		THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+		``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+		LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+		A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION
+		OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+		SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+		LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+		DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+		THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+		(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+		OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+		https://xiph.org/flac/license.html
+
+

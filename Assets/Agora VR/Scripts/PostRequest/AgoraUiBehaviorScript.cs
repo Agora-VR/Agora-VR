@@ -30,7 +30,7 @@ public class AgoraUiBehaviorScript : MonoBehaviour
     private string password;
 
     [SerializeField]
-    private float testTime;
+    private int testTime;
 
     private IEnumerator TestSave()
     {
@@ -74,9 +74,12 @@ public class AgoraUiBehaviorScript : MonoBehaviour
     void Start()
     {
         #if UNITY_ANDROID && !UNITY_EDITOR
-        folderPath = Application.persistentDataPath;
+            folderPath = Application.persistentDataPath;
+            GameObject sessionManager = GameObject.FindWithTag("SessionManager");
+            SessionManager sessionScript = sessionManager.GetComponent<SessionManager>();
+            testTime = sessionScript.getSessionTime() + 10;
         #else
-        folderPath = Application.dataPath;
+            folderPath = Application.dataPath;
         #endif
 
         StartCoroutine(TestSave());

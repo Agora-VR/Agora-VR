@@ -19,7 +19,7 @@ public class AudioVolume : MonoBehaviour
     private float time;
 
     [SerializeField]
-    private float testTime;
+    private int testTime;
 
     private float counter;
     private float[] clipSampleData;
@@ -122,7 +122,12 @@ public class AudioVolume : MonoBehaviour
         StringBuilder sb = new StringBuilder();
 
         for (int index = 0; index < length; index++)
-            sb.AppendLine(string.Join(delimiter, output[index]));
+        {
+            if (index != length - 1)
+                sb.AppendLine(string.Join(delimiter, output[index]));
+            else
+                sb.Append(string.Join(delimiter, output[index]));
+        }
 
         StreamWriter outStream = System.IO.File.CreateText(filePath);
         outStream.WriteLine(sb);
@@ -164,21 +169,32 @@ public class AudioVolume : MonoBehaviour
             float listendecibels = 20 * Mathf.Log(rmsValue / reference, 10);
             if (rmsValue == 0.0f)
                 listendecibels = 0.0f;
-
-            counter += 0.1f;
+            
             //Debug.Log(volume.ToString());
             AudioVolume[0] = Mathf.RoundToInt(counter * 1000).ToString();
             AudioVolume[1] = micdecibels.ToString();
             AudioVolume[2] = listendecibels.ToString();
             AudioData.Add(AudioVolume);
+
+            counter += 0.1f;
         }
+    }
+
+    IEnumerator SaveCSV()
+    {
+        yield return new WaitForSeconds(testTime);
+
+        SaveAudioData(AudioData, folderPath + "/Audio_Data.csv");
+        audioSource.clip = fullAudioClip;
+        //gameObject.GetComponent<AudioSource>().clip = fullAudioClip;
+        audioSource.Play();
     }
 
     IEnumerator CombineCoroutine()
     {
         yield return new WaitForSeconds(2);
         if (audioSource.clip == null)
-            Debug.Log("STOOPPFSEJDGSJ");
+            Debug.Log("STOP COMBINING");
 
         AudioClip fullAudioClip2;
         while (true)
@@ -199,12 +215,15 @@ public class AudioVolume : MonoBehaviour
     void Start()
     {
         #if UNITY_ANDROID && !UNITY_EDITOR
-        folderPath = Application.persistentDataPath;
+            folderPath = Application.persistentDataPath;
+            GameObject sessionManager = GameObject.FindWithTag("SessionManager");
+            SessionManager sessionScript = sessionManager.GetComponent<SessionManager>();
+            testTime = sessionScript.getSessionTime() + 4;
         #else
-        folderPath = Application.dataPath;
+            folderPath = Application.dataPath;
         #endif
 
-    fullAudioClip = null;
+        fullAudioClip = null;
 
         string[] firstRow = new string[3];
         firstRow[0] = "Timestamp";
@@ -224,32 +243,16 @@ public class AudioVolume : MonoBehaviour
         highest = 0f; //record events and distracted times
         reference = 0.1f / 1024f;
         audioSource.Play();
+
+        StartCoroutine(SaveCSV());
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetAudioData();
+        if (Mathf.RoundToInt(counter * 1000) <= (testTime - 4)*1000)
+            GetAudioData();
 
-        /*if (Microphone.IsRecording(Microphone.devices[0].ToString()) == false)
-        {
-            AudioClip[] allClips = new AudioClip[2] { fullAudioClip, audioSource.clip };
-            AudioClip fullAudioClip2 = Combine(allClips);
-            fullAudioClip = fullAudioClip2;
-            audioSource.clip = Microphone.Start(Microphone.devices[0].ToString(), false, 60, 88200);
-            audioSource.Play();
-            Debug.Log("RECORDING");
-        }
-        */
-        if (Mathf.RoundToInt(counter) == testTime)
-        {
-            SaveAudioData(AudioData, folderPath + "/Audio_Data.csv");
-            counter += 2.0f;
-            audioSource.clip = fullAudioClip;
-            //gameObject.GetComponent<AudioSource>().clip = fullAudioClip;
-            audioSource.Play();
-        }
-
-        time += Time.deltaTime;
+            time += Time.deltaTime;
     }
 }

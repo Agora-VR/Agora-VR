@@ -22,7 +22,7 @@ namespace IBM.Watsson.Examples
         private string _iamApikey;
 
         [SerializeField]
-        private float testTime;
+        private int testTime;
 
         [SerializeField]
         private AudioSource _audioSource;
@@ -35,15 +35,19 @@ namespace IBM.Watsson.Examples
         private int _recordingBufferSize = 10;
         private int _recordingHZ = 44100;
         private List<string> finalText = new List<string>();
+        private bool stopSpeech;
 
         private SpeechToTextService _service;
 
         void Start()
         {
         #if UNITY_ANDROID && !UNITY_EDITOR
-        folderPath = Application.persistentDataPath;
+            folderPath = Application.persistentDataPath;
+            GameObject sessionManager = GameObject.FindWithTag("SessionManager");
+            SessionManager sessionScript = sessionManager.GetComponent<SessionManager>();
+            testTime = sessionScript.getSessionTime() + 2;
         #else
-        folderPath = Application.dataPath;
+            folderPath = Application.dataPath;
         #endif
 
             LogSystem.InstallDefaultReactors();
@@ -58,6 +62,9 @@ namespace IBM.Watsson.Examples
         private IEnumerator Testing()
         {
             yield return new WaitForSeconds(testTime);
+            stopSpeech = true;
+
+            yield return new WaitForSeconds(2);
             string translation = getFinalText();
             File.WriteAllText(folderPath + "/speech.txt", translation);
         }
@@ -210,9 +217,15 @@ namespace IBM.Watsson.Examples
                     {
                         string text = string.Format("{0} ({1}, {2:0.00})\n", alt.transcript, res.final ? "Final" : "Interim", alt.confidence);
                         //Log.Debug("ExampleStreaming.OnRecognize()", text);
-                        if (res.final)
+                        if (res.final || stopSpeech)
                             finalText.Add(alt.transcript);
+
                         Log.Debug("", string.Join("", finalText.ToArray()));
+
+                        if (stopSpeech)
+                        {
+                            _service.StopListening();
+                        }
                     }
                 }
             }

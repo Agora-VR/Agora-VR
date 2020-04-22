@@ -8842,7 +8842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serviceUrl: https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/d99148df-932c-4d91-8928-a070cd7905f3
   _iamApikey: eSvkNoA4UQWHjg18oyKAA_F7p-hADruliZre3Wzy4zM6
-  testTime: 68
+  testTime: 62
   _audioSource: {fileID: 561122241}
 --- !u!114 &643779133
 MonoBehaviour:

@@ -15,7 +15,7 @@ namespace IBM.Watsson.Examples
         private const string SAVE_SEPARATOR = "\n";
 
         [SerializeField]
-        private float testTime;
+        private int testTime;
 
         private HeadMovement headScript;
         [SerializeField]
@@ -41,9 +41,12 @@ namespace IBM.Watsson.Examples
         {
 
             #if UNITY_ANDROID && !UNITY_EDITOR
-            folderPath = Application.persistentDataPath;
+                folderPath = Application.persistentDataPath;
+                GameObject sessionManager = GameObject.FindWithTag("SessionManager");
+                SessionManager sessionScript = sessionManager.GetComponent<SessionManager>();
+                testTime = sessionScript.getSessionTime() + 6;
             #else
-            folderPath = Application.dataPath;
+                folderPath = Application.dataPath;
             #endif
 
             headScript = head.GetComponent<HeadMovement>();

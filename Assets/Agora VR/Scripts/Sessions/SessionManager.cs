@@ -35,6 +35,12 @@ public class SessionManager : MonoBehaviour
     private int HR;
     private float SPO2;
 
+
+    public int getSessionTime()
+    {
+        return (int)len;
+    }
+
     void OnEnable()
     {
         Debug.Log("OnEnable called");
@@ -82,7 +88,12 @@ public class SessionManager : MonoBehaviour
         StringBuilder sb = new StringBuilder();
 
         for (int index = 0; index < length; index++)
-            sb.AppendLine(string.Join(delimiter, output[index]));
+        {
+            if (index != length - 1)
+                sb.AppendLine(string.Join(delimiter, output[index]));
+            else
+                sb.Append(string.Join(delimiter, output[index]));
+        }
 
         StreamWriter outStream = System.IO.File.CreateText(filePath);
         outStream.WriteLine(sb);
@@ -112,7 +123,7 @@ public class SessionManager : MonoBehaviour
 
         StartCoroutine(saveHRSPO2()); // this must go before StartCoroutine(saveData(HRMSaveInterval))
 
-        mSaveData = StartCoroutine(saveData(HRMSaveInterval));
+        mSaveData = StartCoroutine(saveData(HRMSaveInterval));  
 
         int minutes = (int) len * 60;
 
@@ -134,14 +145,10 @@ public class SessionManager : MonoBehaviour
 
     private IEnumerator saveData(float interval)
     {
-        if (BLEHRMSPO2.curHR < 40 || BLEHRMSPO2.curHR > 200)
-            HR = 0;
-        else
+        if (BLEHRMSPO2.curHR >= 40 || BLEHRMSPO2.curHR <= 200)
             HR = BLEHRMSPO2.curHR;
 
-        if (BLEHRMSPO2.curSpO2 < 70 || BLEHRMSPO2.curSpO2 > 100)
-            SPO2 = 0;
-        else
+        if (BLEHRMSPO2.curSpO2 >= 70 || BLEHRMSPO2.curSpO2 <= 100)
             SPO2 = BLEHRMSPO2.curSpO2;
 
         string[] HRSPO2Entry = new string[] {miliseconds.ToString(), HR.ToString(), SPO2.ToString()};
@@ -150,7 +157,9 @@ public class SessionManager : MonoBehaviour
 
         yield return new WaitForSeconds(interval);
         miliseconds += (int) HRMSaveInterval*1000;
-        mSaveData = StartCoroutine(saveData(HRMSaveInterval)); // Keep reference to this to stop it when session ends.
+
+        if (miliseconds <= (int)len * 60 * 1000)
+            mSaveData = StartCoroutine(saveData(HRMSaveInterval)); // Keep reference to this to stop it when session ends.
     }
 
     private IEnumerator Review()
@@ -171,7 +180,7 @@ public class SessionManager : MonoBehaviour
         HR = 0;
         SPO2 = 0;
 
-        yield return new WaitForSeconds(60 * (int)len - 2);
+        yield return new WaitForSeconds(60 * (int)len + 2);
 
         saveToCSV(Application.persistentDataPath + "/HRSPO2Data.csv");
     }

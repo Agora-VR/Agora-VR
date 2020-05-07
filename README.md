@@ -33,18 +33,28 @@ Our idea revolves around using the Oculus Quest, a standalone VR HMD that does n
 
 Using psychotherapy (a type of therapy that helps change a person’s behavioral and thinking patterns), exposure therapy (a type of therapy that exposes the person to the things that they are afraid of or avoid in a controlled way), and metacognitive interpersonal therapy (MIT), we can reduce the effects of agoraphobia and other social anxiety disorders of patients who use our system.
 
-## Features
-### Dynamic Sessions
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+It is best to watch our video where we explain everything in full detail (https://youtu.be/PuKoxOJlpNI).
 
-### Auditorium Public Speaking Scenario
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Features
+Below are very short descriptions of the features we have in this project. Again, for more details, refer to our video.
+
+### Sessions
+The patient will use the system for exposure therapy sessions. These sessions can be controlled by a state machine or input from the clincian overseeing the patients' progress.
+
+### Meeting Room Scenario
+The meeting room scenario is a small environment and serves as a starting point to ease the patient into the therapy treatment. After they become comfortable with the meeting room scenario, they will be escalted to the Auditorium scenario which is much larger with more people and distractions.
+
+### Auditorium Scenario
+The auditorium scenario is a large environment with a seat count of around 700. This is a more complicated scenario than the meeting room.
 
 ### Heart-rate & Stress Level Tracking
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Heart rate and blood oxygenation levels are measured in real time and transmitted to our application via Bluetooth Low Energy. We store and send this data to the database after every session so the clinician can see the patient's reactions to stressful situations.
 
-### Patient/Clinician/Cartaker Web Portal
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Movement Tracking & Voice Recording
+The patient's movements are tracked as well as their audio recorded. We run a speech to text algorithm to get a comparison between their actual speech and the script they are meant to follow.
+
+### Patient/Clinician/Caretaker Web Portal
+The web portal allows the patient or clincian to access their session data and review their performance. We display all of the data collected as well as the audio clip of the session.
 
 # Group S20-61 Members
 <table>
@@ -74,26 +84,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </tr>
 </table>
 
-### Contributions (WIP. Subject To Change.)
+### Members' Contributions
 >*All members primarily contributed based on their strengths but also assisted other team members in other areas when needed.*
 
 [Aryeh Ness](https://github.com/AryehNess)
  - Therapy Research Lead
  - Research Protocol Lead
- - 3D Models
- - Unity Development
+ - 3D Modeling (Meeting Room)
 
 [Daniel Nguyen](https://www.linkedin.com/in/dannguyen-ce/)
  - Art, Design, & Presentation Lead
- - Unity & Oculus Development Lead
- - 3D Models Lead
- - Hardware Integration
+ - Unity Development Lead
+ - Oculus Quest Integration & Testing
+ - 3D Models Lead (Auditorium)
+ - BLE HRM Hardware Integration
 
 [Ted Moseley](https://www.linkedin.com/in/ted-moseley-6646b1192/)
  - Backend & Database Lead
  - Website & Access Portal Lead
- - Hardware Setup & Communications
+ - BLE HRM Hardware Communications
  - Data Tracking & Collection
+ - Video Editing
 
 [Michael Truong](https://github.com/MichaelTruongZ)
  - Data Tracking & Collection Lead
@@ -102,8 +113,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Attributions
 Special thanks to:
- - Lorem Ipsum
- - Lorem Ipsum
+ - Bensound.com for royalty free music
+ - Elin Höhler for Oculus Home scene
 
 
 ```

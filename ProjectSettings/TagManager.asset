@@ -9,6 +9,9 @@ TagManager:
   - DDOL
   - MainMenu
   - Plugin
+  - Cam2
+  - Cam1
+  - SessionManager
   layers:
   - Default
   - TransparentFX

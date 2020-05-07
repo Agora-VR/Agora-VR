@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
+using System.Text;
+
 
 [AddComponentMenu("Agora VR/Sessions/Session Manager")]
 public class SessionManager : MonoBehaviour
@@ -18,8 +21,7 @@ public class SessionManager : MonoBehaviour
     };
 
     // Values Saved Here
-    private List<string[]> heartRateData = new List<string[]>();
-    private List<string[]> spo2Data = new List<string[]>();
+    private List<string[]> HRSPO2Data = new List<string[]>();
 
     [SerializeField]
     private MainMenu menu;
@@ -30,6 +32,14 @@ public class SessionManager : MonoBehaviour
     private Coroutine mSaveData;
     private int miliseconds;
     private object len;
+    private int HR;
+    private float SPO2;
+
+
+    public int getSessionTime()
+    {
+        return (int)len;
+    }
 
     void OnEnable()
     {
@@ -41,7 +51,7 @@ public class SessionManager : MonoBehaviour
     {
         Debug.Log("OnSceneLoaded: " + scene.buildIndex);
 
-        switch(scene.buildIndex){
+        switch (scene.buildIndex){
             case 0:
                 currentScene = sceneName.MainMenu;
                 StartCoroutine(Menu());
@@ -63,11 +73,41 @@ public class SessionManager : MonoBehaviour
         }
     }
 
+    private void saveToCSV(string filePath)
+    {
+        string[][] output = new string[HRSPO2Data.Count][];
+
+        for (int i = 0; i < output.Length; i++)
+        {
+            output[i] = HRSPO2Data[i];
+        }
+
+        int length = output.GetLength(0);
+        string delimiter = ",";
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int index = 0; index < length; index++)
+        {
+            if (index != length - 1)
+                sb.AppendLine(string.Join(delimiter, output[index]));
+            else
+                sb.Append(string.Join(delimiter, output[index]));
+        }
+
+        StreamWriter outStream = System.IO.File.CreateText(filePath);
+        outStream.WriteLine(sb);
+        outStream.Close();
+    }
+
     private IEnumerator Menu()
     {
         menu = GameObject.FindGameObjectWithTag("MainMenu").GetComponent<MainMenu>();
         BLEHRMSPO2 = GameObject.FindGameObjectWithTag("Plugin").GetComponent<PluginWrapper>();
         yield return null;
+
+        //yield return new WaitForSeconds(10);
+        //SceneManager.LoadScene(1);
     }
 
     private IEnumerator Auditorium()
@@ -79,15 +119,16 @@ public class SessionManager : MonoBehaviour
 
         // Reset Variables for new session.
         miliseconds = 0;
-        heartRateData.Clear();
-        spo2Data.Clear();
+        HRSPO2Data.Clear();
 
-        mSaveData = StartCoroutine(saveData(HRMSaveInterval));
+        StartCoroutine(saveHRSPO2()); // this must go before StartCoroutine(saveData(HRMSaveInterval))
+
+        mSaveData = StartCoroutine(saveData(HRMSaveInterval));  
 
         int minutes = (int) len * 60;
 
-        yield return new WaitForSeconds(minutes);
-        StopCoroutine(mSaveData);
+        yield return new WaitForSeconds(minutes+30);
+        //StopCoroutine(mSaveData);
         StopCoroutine(mGetData);
         SceneManager.LoadScene(3); // Loads Review Scene
     }
@@ -104,15 +145,21 @@ public class SessionManager : MonoBehaviour
 
     private IEnumerator saveData(float interval)
     {
-        string[] HREntry = new string[] {miliseconds.ToString(), BLEHRMSPO2.curHR.ToString()};
-        string[] spo2Entry = new string[] {miliseconds.ToString(), BLEHRMSPO2.curSpO2.ToString()};
+        if (BLEHRMSPO2.curHR >= 40 || BLEHRMSPO2.curHR <= 200)
+            HR = BLEHRMSPO2.curHR;
 
-        heartRateData.Add(HREntry);
-        spo2Data.Add(spo2Entry);
+        if (BLEHRMSPO2.curSpO2 >= 70 || BLEHRMSPO2.curSpO2 <= 100)
+            SPO2 = BLEHRMSPO2.curSpO2;
+
+        string[] HRSPO2Entry = new string[] {miliseconds.ToString(), HR.ToString(), SPO2.ToString()};
+
+        HRSPO2Data.Add(HRSPO2Entry);
 
         yield return new WaitForSeconds(interval);
         miliseconds += (int) HRMSaveInterval*1000;
-        mSaveData = StartCoroutine(saveData(HRMSaveInterval)); // Keep reference to this to stop it when session ends.
+
+        if (miliseconds <= (int)len * 60 * 1000)
+            mSaveData = StartCoroutine(saveData(HRMSaveInterval)); // Keep reference to this to stop it when session ends.
     }
 
     private IEnumerator Review()
@@ -121,4 +168,21 @@ public class SessionManager : MonoBehaviour
         yield return new WaitForSeconds(10);
         SceneManager.LoadScene(0); // Loads Main Menu
     }
+
+    private IEnumerator saveHRSPO2()
+    {
+        string[] firstRow = new string[3];
+        firstRow[0] = "Timestamp";
+        firstRow[1] = "Heartrate";
+        firstRow[2] = "spo2";
+        HRSPO2Data.Add(firstRow);
+
+        HR = 0;
+        SPO2 = 0;
+
+        yield return new WaitForSeconds(60 * (int)len + 2);
+
+        saveToCSV(Application.persistentDataPath + "/HRSPO2Data.csv");
+    }
+
 }

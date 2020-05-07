@@ -9,6 +9,6 @@ public class DontDestroyOnLoad : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
     }
 }

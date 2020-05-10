@@ -80,7 +80,6 @@ The web portal allows the patient or clincian to access their session data and r
     <th><a href="https://www.linkedin.com/in/ted-moseley-6646b1192/">Ted Moseley</a></th>
     <th><a href="https://github.com/MichaelTruongZ">Michael Truong</a></th>
     <th><a href="https://github.com/AryehNess">Aryeh Ness</a></th>
-
     <th><a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/">Dr. Grigore Burdea</a></th>
   </tr>
 </table>

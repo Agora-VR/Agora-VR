@@ -60,9 +60,6 @@ The web portal allows the patient or clincian to access their session data and r
 <table>
   <tr>
     <th width="20%">
-        <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png"></a>
-    </th>
-    <th width="20%">
         <a href="https://www.linkedin.com/in/dannguyen-ce/"><img src="Image Assets\profile_dan.png"></a>
     </th>
     <th width="20%">
@@ -70,6 +67,9 @@ The web portal allows the patient or clincian to access their session data and r
     </th>
     <th width="20%">
         <a href="https://github.com/MichaelTruongZ"><img src="Image Assets\profile_mike.png"></a>
+    </th>
+    <th width="20%">
+        <a href="https://github.com/AryehNess"><img src="Image Assets\profile_aryeh.png"></a>
     </th>
     <th width="20%">
         <a href="https://www.linkedin.com/in/grigore-burdea-phd-9a028340/"><img src="Image Assets\profile_burdea.png"></a>
@@ -87,29 +87,32 @@ The web portal allows the patient or clincian to access their session data and r
 ### Members' Contributions
 >*All members primarily contributed based on their strengths but also assisted other team members in other areas when needed.*
 
+[Daniel Nguyen](https://www.linkedin.com/in/dannguyen-ce/)
+ - Art, Graphic Design, & Presentation
+ - Unity Development Lead
+ - Oculus Quest Integration & Testing
+ - 3D Modeling Lead (Auditorium)
+ - Character Animation
+ - BLE HRM Integration & Build
+
+[Ted Moseley](https://www.linkedin.com/in/ted-moseley-6646b1192/)
+ - Backend & Database Lead
+ - Website Frontend & Access Portal
+ - Data Graphing & Display
+ - BLE HRM Software
+ - Data Collection
+ - Video Editing
+
+[Michael Truong](https://github.com/MichaelTruongZ)
+ - Head & Hand Tracking
+ - Audio Recording
+ - Speech-To-Text Integration
+
 [Aryeh Ness](https://github.com/AryehNess)
  - Therapy Research Lead
  - Research Protocol Lead
  - 3D Modeling (Meeting Room)
 
-[Daniel Nguyen](https://www.linkedin.com/in/dannguyen-ce/)
- - Art, Design, & Presentation Lead
- - Unity Development Lead
- - Oculus Quest Integration & Testing
- - 3D Models Lead (Auditorium)
- - BLE HRM Hardware Integration
-
-[Ted Moseley](https://www.linkedin.com/in/ted-moseley-6646b1192/)
- - Backend & Database Lead
- - Website & Access Portal Lead
- - BLE HRM Hardware Communications
- - Data Tracking & Collection
- - Video Editing
-
-[Michael Truong](https://github.com/MichaelTruongZ)
- - Data Tracking & Collection Lead
- - Speech-To-Text Integration
- - Unity Development
 
 ### Attributions
 Special thanks to:
